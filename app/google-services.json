@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "242565783176",
+    "firebase_url": "https://elearning-e2f99.firebaseio.com",
+    "project_id": "elearning-e2f99",
+    "storage_bucket": "elearning-e2f99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242565783176:android:96a54033ff404682",
+        "android_client_info": {
+          "package_name": "com.aviator.elearning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "242565783176-dcf153flm9cfgd178hsfd86o2b1e7j1j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aviator.elearning",
+            "certificate_hash": "32a89c24a89bcd0f36dd24682079d835f4ab6b2c"
+          }
+        },
+        {
+          "client_id": "242565783176-5bbvr37sccuffvsc62lk7a34mp66pub9.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "242565783176-5bbvr37sccuffvsc62lk7a34mp66pub9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWfXoFQDnTQZ25HTxXlmrVSmBA7zhmkgc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "242565783176-5bbvr37sccuffvsc62lk7a34mp66pub9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

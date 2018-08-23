@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="45dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AdminPanel"
+    android:scrollbars="none"
+    android:elevation="@dimen/fab_margin"
+    android:dividerHeight="2dp"
+    android:id="@+id/listView"
+    android:divider="@android:color/transparent"
+    tools:showIn="@layout/activity_admin_panel"
+    tools:listitem="@layout/custom_header"
+    tools:targetApi="lollipop" />

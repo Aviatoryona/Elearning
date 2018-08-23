@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aviator.elearning">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.Camera" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Launcher"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EmailReq"
+            android:label="@string/title_activity_email_req"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PasswordReq"
+            android:label="@string/title_activity_password_req"
+            android:parentActivityName=".EmailReq"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aviator.elearning.EmailReq" />
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyAccount"
+            android:label="@string/title_activity_my_account"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aviator.elearning.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MySettings"
+            android:label="@string/title_activity_my_settings"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aviator.elearning.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MyNotifications"
+            android:label="@string/title_activity_my_notifications"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aviator.elearning.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Courses"
+            android:label="@string/title_activity_courses"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aviator.elearning.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Exams"
+            android:label="@string/title_activity_exams"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aviator.elearning.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Lab"
+            android:label="@string/title_activity_lab"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aviator.elearning.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TutorDashboard"
+            android:label="@string/title_activity_tutor_dashboard"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aviator.elearning.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AdminPanel"
+            android:label="@string/title_activity_admin_panel"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aviator.elearning.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TutorNewCourse"
+            android:label="@string/title_activity_tutor_new_course"
+            android:parentActivityName=".TutorDashboard"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aviator.elearning.TutorDashboard" />
+        </activity>
+        <activity
+            android:name=".TutorNewExam"
+            android:label="@string/title_activity_tutor_new_exam"
+            android:parentActivityName=".TutorDashboard"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aviator.elearning.TutorDashboard" />
+        </activity>
+        <activity
+            android:name=".ExploreExam"
+            android:label="@string/title_activity_explore_exam"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ExploreCourse"
+            android:label="@string/title_activity_explore_course"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StartExam"
+            android:label="@string/title_activity_start_exam"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TopicContent"
+            android:label="@string/title_activity_topic_content"
+            android:parentActivityName=".ExploreCourse"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aviator.elearning.ExploreCourse" />
+        </activity>
+        <activity
+            android:name=".TutorCourseExams"
+            android:label="@string/title_activity_my_course_exams"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VideoTutorials"
+            android:label="@string/title_activity_video_tutorials"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aviator.elearning.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TutorAddCourseContent"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TutorAddExamQnOptions"
+            android:label="@string/title_activity_tutor_add_exam_qn_options"
+            android:parentActivityName=".TutorNewExam"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aviator.elearning.TutorNewExam" />
+        </activity>
+        <activity
+            android:name=".AdminManage"
+            android:label="@string/title_activity_admin_manage"
+            android:parentActivityName=".AdminPanel"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aviator.elearning.AdminPanel" />
+        </activity>
+        <activity
+            android:name=".ExploreCourseContent"
+            android:label="@string/title_activity_explore_course_content"
+            android:parentActivityName=".ExploreCourse"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aviator.elearning.ExploreCourse" />
+        </activity>
+        <activity
+            android:name=".BasicSearch"
+            android:label="@string/title_activity_basic_search"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
